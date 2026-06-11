@@ -63,6 +63,30 @@
     animation: fadeIn 2s ease 2s forwards, pulse 3s ease-in-out infinite 4s;
   }
   
+  #zarathustra-link {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #ffb4c8;
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 180, 200, 0.3);
+    border-radius: 8px;
+    background: rgba(20, 10, 30, 0.6);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    opacity: 0;
+    animation: fadeIn 2s ease 1s forwards;
+  }
+  
+  #zarathustra-link:hover {
+    background: rgba(255, 180, 200, 0.2);
+    border-color: rgba(255, 180, 200, 0.6);
+    transform: scale(1.05);
+  }
+  
   #info-panel {
     position: absolute;
     top: 50%;
@@ -187,6 +211,7 @@
 <div id="canvas-container"></div>
 
 <div id="ui-overlay">
+  <a id="zarathustra-link" href="zarathustra.html">📖 Thus Spake Zarathustra</a>
   <div id="title">日本世界</div>
   <div id="hint">drag to orbit · click objects to interact · scroll to zoom</div>
   <div id="info-panel">
