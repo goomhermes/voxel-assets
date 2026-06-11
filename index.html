@@ -642,11 +642,7 @@ function animate() {
     obj.rotation.y += 0.001;
   });
   
-  // Animate lights
-  warmLight.intensity = 0.8 + Math.sin(time * 3) * 0.2;
-  pinkLight.position.x = Math.sin(time * 0.5) * 15;
-  pinkLight.position.z = Math.cos(time * 0.5) * 15;
-  
+  // Update hover effects
   updateHover();
   controls.update();
   renderer.render(scene, camera);
